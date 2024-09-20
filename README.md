@@ -24,4 +24,4 @@ General                                                                         
 ### System
 Notifications / Calendar Menu                                                         |  Power Menu
 :------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:
-![](https://github.com/user-attachments/assets/043a6700-4913-4290-9e50-472485e14e0c)  |  ![](https://github.com/user-attachments/assets/629de450-61a8-4ea5-9956-988c3322f763)
+![](https://github.com/user-attachments/assets/3e621a29-d9c9-43e6-9955-a9640a786ebb)  |  ![](https://github.com/user-attachments/assets/629de450-61a8-4ea5-9956-988c3322f763)

@@ -1,7 +1,0 @@
-i-center|i-center|around|
-main|main|buffer|
-pow|pow|around|
-pow|pow|around|
-spiral|spiral|around|
-print|print|around|
-top|top|around|

@@ -1,0 +1,192 @@
+# ╔══════════════════════════════════════════════════════════════════╗
+# ║  ALACRITTY FANCY CONFIGURATION - DARK SPACE THEME                ║
+# ║  Ultimate eye candy terminal setup                                ║
+# ╚══════════════════════════════════════════════════════════════════╝
+
+# import = [
+  # Uncomment if you have additional theme files
+  # "~/.config/alacritty/themes/custom.toml"
+# ]
+
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  ENVIRONMENT                                                      │
+# └──────────────────────────────────────────────────────────────────┘
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  WINDOW CONFIGURATION                                             │
+# └──────────────────────────────────────────────────────────────────┘
+[window]
+# Window dimensions
+dimensions = { columns = 140, lines = 42 }
+position = { x = 100, y = 100 }
+
+# Fancy padding for breathing room
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+
+# Window decorations - Borderless for clean look
+# decorations = "Borderless"  # Still resizable!
+decorations = "Transparent" # macOS only - full transparency
+
+# Transparency and blur (the fancy part!)
+opacity = 0.96  # Lower = more transparent
+blur = true     # macOS/KDE only - enables background blur
+
+# Window behavior
+resize_increments = false    # Smooth pixel-perfect resizing
+
+# Window class (Linux/BSD only)
+class = { instance = "Alacritty", general = "Alacritty" }
+
+# Decorations theme variant
+decorations_theme_variant = "Dark"  # Dark window chrome
+
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  SCROLLING                                                        │
+# └──────────────────────────────────────────────────────────────────┘
+[scrolling]
+history = 100000  # Massive scrollback buffer
+multiplier = 3    # Scroll 3 lines at a time
+
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  FANCY FONT CONFIGURATION                                         │
+# └──────────────────────────────────────────────────────────────────┘
+[font]
+# Use a fancy programming font with ligatures
+# normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+# bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+# italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+# bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+
+# Alternative fancy fonts (uncomment your favorite):
+# normal = { family = "Fira Code Nerd Font", style = "Regular" }
+# normal = { family = "CaskaydiaCove Nerd Font", style = "Regular" }
+# normal = { family = "Iosevka Nerd Font", style = "Regular" }
+# normal = { family = "Victor Mono Nerd Font", style = "Regular" }
+
+size = 10.0  # Comfortable size
+
+# Font adjustments
+offset = { x = 0, y = 1 }      # Fine-tune positioning
+glyph_offset = { x = 0, y = 0 }
+builtin_box_drawing = true      # Better box drawing chars
+
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  DARK SPACE COLOR THEME - ENHANCED                               │
+# └──────────────────────────────────────────────────────────────────┘
+[colors]
+draw_bold_text_with_bright_colors = true
+transparent_background_colors = true  # Allow transparency in colors
+
+[colors.primary]
+background = "#1A1B26"  # Dark Space background
+foreground = "#9ABDF5"  # Tertiary Tint
+dim_foreground = "#6183BB"  # Dimmed text
+bright_foreground = "#FFFFFF"  # Extra bright
+
+[colors.cursor]
+cursor = "#87A1FF"  # Primary Tint - pulsing cursor
+text = "#1A1B26"
+
+[colors.vi_mode_cursor]
+cursor = "#B79DFF"  # Accent Tint for vi mode
+text = "#1A1B26"
+
+[colors.selection]
+background = "#425882"  # Tertiary Shade
+text = "#9ABDF5"
+
+[colors.normal]
+black = "#141418"     # Dark Space Black
+red = "#F7768E"       # Highlight
+green = "#58C8F1"     # Secondary
+yellow = "#B79DFF"    # Accent Tint
+blue = "#87A1FF"      # Primary Tint
+magenta = "#A779F3"   # Accent
+cyan = "#7BCCFC"      # Secondary Tint
+white = "#9ABDF5"     # Tertiary Tint
+
+[colors.bright]
+black = "#425882"     # Tertiary Shade
+red = "#DE4BA3"       # Highlight Shade - hot pink!
+green = "#03BDE5"     # Secondary Shade - vibrant cyan!
+yellow = "#9357E0"    # Accent Shade - purple pop!
+blue = "#6A85E4"      # Primary
+magenta = "#B79DFF"   # Accent Tint
+cyan = "#58C8F1"      # Secondary
+white = "#FFFFFF"     # Pure white for contrast
+
+[colors.dim]
+black = "#29355A"     # Tertiary Shade Darker
+red = "#DE4BA3"       # Highlight Shade
+green = "#03BDE5"     # Secondary Shade
+yellow = "#9357E0"    # Accent Shade
+blue = "#4A55B9"      # Primary Shade
+magenta = "#9357E0"   # Accent Shade
+cyan = "#03BDE5"      # Secondary Shade
+white = "#6183BB"     # Tertiary
+
+# Search highlighting
+[colors.search]
+[colors.search.matches]
+foreground = "#1A1B26"
+background = "#B79DFF"
+[colors.search.focused_match]
+foreground = "#1A1B26"
+background = "#58C8F1"
+
+# Keyboard hints
+[colors.hints]
+[colors.hints.start]
+foreground = "#1A1B26"
+background = "#B79DFF"
+[colors.hints.end]
+foreground = "#1A1B26"
+background = "#58C8F1"
+
+# Line indicator
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+# Footer bar (search, etc)
+[colors.footer_bar]
+foreground = "#9ABDF5"
+background = "#29355A"
+
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  SELECTION                                                        │
+# └──────────────────────────────────────────────────────────────────┘
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true  # Auto-copy selection to clipboard
+
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  HINTS - URL LAUNCHER AND MORE                                    │
+# └──────────────────────────────────────────────────────────────────┘
+[hints]
+alphabet = "jfkdls;ahgurieowpq"  # Keys for hint mode
+[[hints.enabled]]
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+hyperlinks = true
+command = "open"  # Use "xdg-open" on Linux, "open" on macOS
+post_processing = true
+mouse.enabled = true
+mouse.mods = "None"
+binding = { key = "U", mods = "Control|Shift" }
+
+# ┌──────────────────────────────────────────────────────────────────┐
+# │  DEBUG & LOGGING                                                  │
+# └──────────────────────────────────────────────────────────────────┘
+[debug]
+render_timer = false  # Show render timer
+persistent_logging = false  # Keep log after quitting
+log_level = "Warn"  # Options: Off, Error, Warn, Info, Debug, Trace
+renderer = "None"  # Force renderer: None, OpenGL, GLES
+print_events = false  # Print all received events
+highlight_damage = false  # Highlight damage information
+prefer_egl = false  # Use EGL instead of GLX (Linux)
+

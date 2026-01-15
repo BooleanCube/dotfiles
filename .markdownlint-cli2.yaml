@@ -1,0 +1,7 @@
+# .markdownlint-cli2.yaml
+config:
+  default: true
+  MD013: false  # Disable line length
+  MD033: false  # Allow inline HTML
+  MD041: false  # Don't require first line to be a header
+  MD060: false  # Don't have to align table columns
